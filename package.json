@@ -1,5 +1,5 @@
 {
-  "name": "light-saas-template",
+  "name": "light-saas-landing-page",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,18 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "next": "15.0.3"
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.14",
+    "next": "^14.2.18",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "15.0.3"
+    "eslint-config-next": "14.2.4",
+    "postcss": "^8",
+    "prettier": "^3.4.1",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
