@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+  /* Button utilities */
   .btn {
     @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium tracking-tight;
   }
@@ -12,10 +13,22 @@
   .btn-text {
     @apply bg-transparent text-black;
   }
+  /* LogoTicker utility */
   .logo-ticker-image {
     @apply h-8 w-auto;
   }
+  /* Tag utility */
   .tag {
     @apply inline-flex rounded-lg border border-[#222]/10 px-3 py-1 text-sm tracking-tight;
+  }
+  /* Section utilities */
+  .section-heading {
+    @apply mx-auto max-w-[540px];
+  }
+  .section-title {
+    @apply bg-gradient-to-b from-black to-[#001E80] bg-clip-text text-center text-3xl font-bold tracking-tighter text-transparent md:text-[54px] md:leading-[60px];
+  }
+  .section-description {
+    @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E];
   }
 }
