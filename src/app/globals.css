@@ -31,4 +31,8 @@
   .section-description {
     @apply text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E];
   }
+  /* Card utility */
+  .card {
+    @apply w-full max-w-xs rounded-3xl border border-[#222222]/10 p-10 shadow-[0_7px_14px_#EAEAEA];
+  }
 }
