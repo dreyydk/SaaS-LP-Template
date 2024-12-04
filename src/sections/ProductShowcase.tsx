@@ -51,9 +51,7 @@ export const ProductShowcase = () => {
             height={262}
             width={262}
             className="absolute -right-36 -top-32 hidden md:block"
-            style={{
-              translateY,
-            }}
+            style={{ translateY }}
           />
           {/* Tube image displayed conditionally on medium screens and above */}
           <motion.img
@@ -62,9 +60,7 @@ export const ProductShowcase = () => {
             height={248}
             width={248}
             className="absolute -left-36 bottom-24 hidden md:block"
-            style={{
-              translateY,
-            }}
+            style={{ translateY }}
           />
         </div>
       </div>

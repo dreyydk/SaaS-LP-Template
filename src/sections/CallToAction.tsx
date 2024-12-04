@@ -1,12 +1,27 @@
+"use client";
+
 // Importing necessary assets and components
-import Image from "next/image";
+import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import ArrowRight from "@/assets/arrow-right.svg";
 import starImage from "@/assets/star.png";
 import springImage from "@/assets/spring.png";
 
 export const CallToAction = () => {
+  const sectionRef = React.useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+
   return (
-    <section className="overflow-x-clip bg-gradient-to-b from-white to-[#D2DCFF] py-24">
+    <section
+      ref={sectionRef}
+      className="overflow-x-clip bg-gradient-to-b from-white to-[#D2DCFF] py-24"
+    >
       <div className="container">
         <div className="section-heading relative">
           {/* Section title and description */}
@@ -16,17 +31,19 @@ export const CallToAction = () => {
             your progress and motivate your efforts.
           </p>
           {/* Decorative images */}
-          <Image
-            src={starImage}
+          <motion.img
+            src={starImage.src}
             alt="Star image"
             width={360}
             className="absolute -left-[350px] -top-[137px]"
+            style={{ translateY }}
           />
-          <Image
-            src={springImage}
+          <motion.img
+            src={springImage.src}
             alt="Spring image"
             width={360}
             className="absolute -right-[331px] -top-[19px]"
+            style={{ translateY }}
           />
         </div>
         <div className="mt-10 flex justify-center gap-2">
