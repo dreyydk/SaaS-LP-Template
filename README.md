@@ -1,4 +1,4 @@
-# SiriusAI - Landing Page
+# Landing Page Template (SaaS)
 
 This project is a template that can be easily reused and modified to speed up the development of landing pages in Next.js.
 
